@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>WebRTC QoE Monitor</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+</head>
+<body>
+
+    <h1>WebRTC QoE Monitor</h1>
+
+    <div id="controls">
+        <button id="startBtn">Start Call</button>
+        <button id="stopBtn" disabled>Stop Call</button>
+    </div>
+
+    <div id="mosBox">
+        <div id="mosValue">MOS: --</div>
+        <div id="tierValue">Tier: --</div>
+    </div>
+
+    <div id="videoArea">
+        <video id="localVideo" autoplay muted playsinline></video>
+        <video id="remoteVideo" autoplay playsinline></video>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+pandas
+numpy
+scikit-learn
+xgboost
+matplotlib
+lightgbm
+shap
+torch --index-url https://download.pytorch.org/whl/cpu
+onnxscript
+onnxmltools
+onnxconverter-common
+skl2onnx
+fastapi 
+uvicorn  
+joblib

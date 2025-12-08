@@ -1,0 +1,917 @@
+[
+  {
+    "timestampSec": 1.301,
+    "metrics": {
+      "sendBitrateKbps": null,
+      "recvBitrateKbps": null,
+      "fpsSend": 31,
+      "fpsRecv": 22,
+      "jitterMs": 13,
+      "rttMs": 228,
+      "packetsLost": 0,
+      "packetsReceived": 13,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 2.300699999809265,
+    "metrics": {
+      "sendBitrateKbps": 177.43723120320442,
+      "recvBitrateKbps": 189.12873865767077,
+      "fpsSend": 31,
+      "fpsRecv": 32,
+      "jitterMs": 45,
+      "rttMs": 228,
+      "packetsLost": 0,
+      "packetsReceived": 48,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 3.3012999999523163,
+    "metrics": {
+      "sendBitrateKbps": 197.21766937016565,
+      "recvBitrateKbps": 188.5108934369711,
+      "fpsSend": 31,
+      "fpsRecv": 31,
+      "jitterMs": 50,
+      "rttMs": 190,
+      "packetsLost": 0,
+      "packetsReceived": 78,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 4.301199999809265,
+    "metrics": {
+      "sendBitrateKbps": 255.6415641929891,
+      "recvBitrateKbps": 255.61756179274568,
+      "fpsSend": 31,
+      "fpsRecv": 30,
+      "jitterMs": 48,
+      "rttMs": 190,
+      "packetsLost": 0,
+      "packetsReceived": 114,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 5.300699999809265,
+    "metrics": {
+      "sendBitrateKbps": 294.81140570285135,
+      "recvBitrateKbps": 290.38519259629805,
+      "fpsSend": 31,
+      "fpsRecv": 30,
+      "jitterMs": 43,
+      "rttMs": 190,
+      "packetsLost": 0,
+      "packetsReceived": 169,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 6.300699999809265,
+    "metrics": {
+      "sendBitrateKbps": 307.696,
+      "recvBitrateKbps": 311.984,
+      "fpsSend": 30,
+      "fpsRecv": 31,
+      "jitterMs": 44,
+      "rttMs": 265,
+      "packetsLost": 0,
+      "packetsReceived": 225,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 7.301899999856949,
+    "metrics": {
+      "sendBitrateKbps": 374.007191352543,
+      "recvBitrateKbps": 338.59368755878415,
+      "fpsSend": 31,
+      "fpsRecv": 30,
+      "jitterMs": 48,
+      "rttMs": 265,
+      "packetsLost": 0,
+      "packetsReceived": 278,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 8.300599999904632,
+    "metrics": {
+      "sendBitrateKbps": 388.9135876453944,
+      "recvBitrateKbps": 446.87694000069246,
+      "fpsSend": 30,
+      "fpsRecv": 31,
+      "jitterMs": 47,
+      "rttMs": 265,
+      "packetsLost": 0,
+      "packetsReceived": 347,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 9.304799999952316,
+    "metrics": {
+      "sendBitrateKbps": 421.15913162708387,
+      "recvBitrateKbps": 414.1087432585678,
+      "fpsSend": 31,
+      "fpsRecv": 31,
+      "jitterMs": 48,
+      "rttMs": 240,
+      "packetsLost": 0,
+      "packetsReceived": 408,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 10.300899999856949,
+    "metrics": {
+      "sendBitrateKbps": 464.79670720241575,
+      "recvBitrateKbps": 458.1949603892146,
+      "fpsSend": 31,
+      "fpsRecv": 31,
+      "jitterMs": 40,
+      "rttMs": 240,
+      "packetsLost": 0,
+      "packetsReceived": 470,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 11.308799999952317,
+    "metrics": {
+      "sendBitrateKbps": 503.24040078579895,
+      "recvBitrateKbps": 485.0163706258009,
+      "fpsSend": 30,
+      "fpsRecv": 30,
+      "jitterMs": 46,
+      "rttMs": 240,
+      "packetsLost": 0,
+      "packetsReceived": 536,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 12.301199999809265,
+    "metrics": {
+      "sendBitrateKbps": 541.5235792799939,
+      "recvBitrateKbps": 547.4647320418338,
+      "fpsSend": 30,
+      "fpsRecv": 30,
+      "jitterMs": 48,
+      "rttMs": 321,
+      "packetsLost": 0,
+      "packetsReceived": 612,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 13.302199999809265,
+    "metrics": {
+      "sendBitrateKbps": 621.8581418581422,
+      "recvBitrateKbps": 592.3916083916087,
+      "fpsSend": 31,
+      "fpsRecv": 31,
+      "jitterMs": 47,
+      "rttMs": 321,
+      "packetsLost": 0,
+      "packetsReceived": 694,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 14.300699999809265,
+    "metrics": {
+      "sendBitrateKbps": 678.6740110165249,
+      "recvBitrateKbps": 650.2874311467201,
+      "fpsSend": 30,
+      "fpsRecv": 30,
+      "jitterMs": 39,
+      "rttMs": 257,
+      "packetsLost": 0,
+      "packetsReceived": 781,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 15.307899999856948,
+    "metrics": {
+      "sendBitrateKbps": 679.5631453212827,
+      "recvBitrateKbps": 745.8061953578606,
+      "fpsSend": 30,
+      "fpsRecv": 30,
+      "jitterMs": 45,
+      "rttMs": 257,
+      "packetsLost": 0,
+      "packetsReceived": 882,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 16.301,
+    "metrics": {
+      "sendBitrateKbps": 766.295438415448,
+      "recvBitrateKbps": 758.2881883914276,
+      "fpsSend": 31,
+      "fpsRecv": 30,
+      "jitterMs": 48,
+      "rttMs": 257,
+      "packetsLost": 0,
+      "packetsReceived": 978,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 17.30189999985695,
+    "metrics": {
+      "sendBitrateKbps": 805.4111300981247,
+      "recvBitrateKbps": 782.4637827074935,
+      "fpsSend": 30,
+      "fpsRecv": 30,
+      "jitterMs": 43,
+      "rttMs": 213,
+      "packetsLost": 0,
+      "packetsReceived": 1079,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 18.301799999952316,
+    "metrics": {
+      "sendBitrateKbps": 920.8600859207736,
+      "recvBitrateKbps": 864.9744973672479,
+      "fpsSend": 31,
+      "fpsRecv": 30,
+      "jitterMs": 48,
+      "rttMs": 213,
+      "packetsLost": 0,
+      "packetsReceived": 1191,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 19.313799999952316,
+    "metrics": {
+      "sendBitrateKbps": 1006.0711462450589,
+      "recvBitrateKbps": 960.355731225296,
+      "fpsSend": 30,
+      "fpsRecv": 31,
+      "jitterMs": 50,
+      "rttMs": 213,
+      "packetsLost": 0,
+      "packetsReceived": 1312,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 20.308799999952317,
+    "metrics": {
+      "sendBitrateKbps": 1047.6221105527627,
+      "recvBitrateKbps": 1081.2060301507527,
+      "fpsSend": 30,
+      "fpsRecv": 30,
+      "jitterMs": 49,
+      "rttMs": 215,
+      "packetsLost": 0,
+      "packetsReceived": 1448,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 21.3025,
+    "metrics": {
+      "sendBitrateKbps": 1147.4368521136043,
+      "recvBitrateKbps": 1092.3860319491935,
+      "fpsSend": 30,
+      "fpsRecv": 31,
+      "jitterMs": 51,
+      "rttMs": 215,
+      "packetsLost": 0,
+      "packetsReceived": 1584,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 22.30939999985695,
+    "metrics": {
+      "sendBitrateKbps": 1297.519118269548,
+      "recvBitrateKbps": 1296.6928197293573,
+      "fpsSend": 30,
+      "fpsRecv": 30,
+      "jitterMs": 47,
+      "rttMs": 301,
+      "packetsLost": 0,
+      "packetsReceived": 1748,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 23.300799999952318,
+    "metrics": {
+      "sendBitrateKbps": 1296.4534999761552,
+      "recvBitrateKbps": 1271.0833163998182,
+      "fpsSend": 30,
+      "fpsRecv": 30,
+      "jitterMs": 50,
+      "rttMs": 301,
+      "packetsLost": 0,
+      "packetsReceived": 1904,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 24.307299999952317,
+    "metrics": {
+      "sendBitrateKbps": 1431.9324391455552,
+      "recvBitrateKbps": 1628.2404371584714,
+      "fpsSend": 30,
+      "fpsRecv": 30,
+      "jitterMs": 50,
+      "rttMs": 301,
+      "packetsLost": 0,
+      "packetsReceived": 2108,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 25.30609999990463,
+    "metrics": {
+      "sendBitrateKbps": 1562.6672007153747,
+      "recvBitrateKbps": 1562.6672007153747,
+      "fpsSend": 31,
+      "fpsRecv": 31,
+      "jitterMs": 42,
+      "rttMs": 174,
+      "packetsLost": 0,
+      "packetsReceived": 2301,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 26.310399999856948,
+    "metrics": {
+      "sendBitrateKbps": 1747.9876531746997,
+      "recvBitrateKbps": 1747.9876531746997,
+      "fpsSend": 30,
+      "fpsRecv": 31,
+      "jitterMs": 7,
+      "rttMs": 174,
+      "packetsLost": 0,
+      "packetsReceived": 2510,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 27.31089999985695,
+    "metrics": {
+      "sendBitrateKbps": 1825.1114442778567,
+      "recvBitrateKbps": 1825.1114442778567,
+      "fpsSend": 31,
+      "fpsRecv": 30,
+      "jitterMs": 2,
+      "rttMs": 174,
+      "packetsLost": 0,
+      "packetsReceived": 2731,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 28.7945,
+    "metrics": {
+      "sendBitrateKbps": 1722.4480990520392,
+      "recvBitrateKbps": 1722.4480990520392,
+      "fpsSend": 31,
+      "fpsRecv": 31,
+      "jitterMs": null,
+      "rttMs": 1,
+      "packetsLost": 0,
+      "packetsReceived": 3041,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 29.7945,
+    "metrics": {
+      "sendBitrateKbps": 1615.928,
+      "recvBitrateKbps": 1615.928,
+      "fpsSend": 31,
+      "fpsRecv": 31,
+      "jitterMs": null,
+      "rttMs": 1,
+      "packetsLost": 0,
+      "packetsReceived": 3239,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 30.793899999856947,
+    "metrics": {
+      "sendBitrateKbps": 1745.103062086893,
+      "recvBitrateKbps": 1745.103062086893,
+      "fpsSend": 31,
+      "fpsRecv": 31,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 0,
+      "packetsReceived": 3450,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 31.796799999952317,
+    "metrics": {
+      "sendBitrateKbps": 1669.0238307317043,
+      "recvBitrateKbps": 1669.0238307317043,
+      "fpsSend": 31,
+      "fpsRecv": 31,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 0,
+      "packetsReceived": 3659,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 32.80589999985695,
+    "metrics": {
+      "sendBitrateKbps": 1793.2018632157524,
+      "recvBitrateKbps": 1793.2018632157524,
+      "fpsSend": 31,
+      "fpsRecv": 30,
+      "jitterMs": null,
+      "rttMs": null,
+      "packetsLost": 0,
+      "packetsReceived": 3879,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 33.79469999980927,
+    "metrics": {
+      "sendBitrateKbps": 1695.7443366513478,
+      "recvBitrateKbps": 1695.7443366513478,
+      "fpsSend": 31,
+      "fpsRecv": 31,
+      "jitterMs": null,
+      "rttMs": null,
+      "packetsLost": 0,
+      "packetsReceived": 4084,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 34.79479999995232,
+    "metrics": {
+      "sendBitrateKbps": 1762.8877109767218,
+      "recvBitrateKbps": 1762.8877109767218,
+      "fpsSend": 31,
+      "fpsRecv": 30,
+      "jitterMs": 1,
+      "rttMs": null,
+      "packetsLost": 0,
+      "packetsReceived": 4300,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 35.80459999990463,
+    "metrics": {
+      "sendBitrateKbps": 1701.0893246990672,
+      "recvBitrateKbps": 1701.0893246990672,
+      "fpsSend": 31,
+      "fpsRecv": 30,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 0,
+      "packetsReceived": 4508,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 36.80459999990463,
+    "metrics": {
+      "sendBitrateKbps": 1728.128,
+      "recvBitrateKbps": 1728.128,
+      "fpsSend": 31,
+      "fpsRecv": 30,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 0,
+      "packetsReceived": 4722,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 37.80109999990463,
+    "metrics": {
+      "sendBitrateKbps": 1722.853988961369,
+      "recvBitrateKbps": 1722.853988961369,
+      "fpsSend": 31,
+      "fpsRecv": 30,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 0,
+      "packetsReceived": 4934,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 38.799,
+    "metrics": {
+      "sendBitrateKbps": 1769.7645052923308,
+      "recvBitrateKbps": 1769.7645052923308,
+      "fpsSend": 31,
+      "fpsRecv": 31,
+      "jitterMs": 2,
+      "rttMs": 1,
+      "packetsLost": 0,
+      "packetsReceived": 5151,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 39.79779999995232,
+    "metrics": {
+      "sendBitrateKbps": 1707.6651983194076,
+      "recvBitrateKbps": 1707.6651983194076,
+      "fpsSend": 31,
+      "fpsRecv": 30,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 0,
+      "packetsReceived": 5357,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 40.80859999990463,
+    "metrics": {
+      "sendBitrateKbps": 1713.8504155933229,
+      "recvBitrateKbps": 1713.8504155933229,
+      "fpsSend": 30,
+      "fpsRecv": 30,
+      "jitterMs": 2,
+      "rttMs": 1,
+      "packetsLost": 0,
+      "packetsReceived": 5567,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 41.807,
+    "metrics": {
+      "sendBitrateKbps": 1692.5480767613951,
+      "recvBitrateKbps": 1692.5480767613951,
+      "fpsSend": 30,
+      "fpsRecv": 30,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 0,
+      "packetsReceived": 5770,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 42.79489999985695,
+    "metrics": {
+      "sendBitrateKbps": 1782.0994030316124,
+      "recvBitrateKbps": 1782.0994030316124,
+      "fpsSend": 31,
+      "fpsRecv": 30,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 0,
+      "packetsReceived": 5985,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 43.80519999980927,
+    "metrics": {
+      "sendBitrateKbps": 1675.5023261208491,
+      "recvBitrateKbps": 1675.5023261208491,
+      "fpsSend": 31,
+      "fpsRecv": 30,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 0,
+      "packetsReceived": 6190,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 44.80569999980926,
+    "metrics": {
+      "sendBitrateKbps": 1674.6506746626767,
+      "recvBitrateKbps": 1674.6506746626767,
+      "fpsSend": 30,
+      "fpsRecv": 31,
+      "jitterMs": null,
+      "rttMs": 1,
+      "packetsLost": 0,
+      "packetsReceived": 6396,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 45.807199999809264,
+    "metrics": {
+      "sendBitrateKbps": 1768.730903644533,
+      "recvBitrateKbps": 131.76235646530202,
+      "fpsSend": 30,
+      "fpsRecv": 6,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6412,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 46.80419999980926,
+    "metrics": {
+      "sendBitrateKbps": 1710.7081243731195,
+      "recvBitrateKbps": 0,
+      "fpsSend": 30,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6412,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 47.30679999995232,
+    "metrics": {
+      "sendBitrateKbps": 1809.3434137309293,
+      "recvBitrateKbps": 0,
+      "fpsSend": 30,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6412,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 48.30219999980927,
+    "metrics": {
+      "sendBitrateKbps": 1261.9328914813336,
+      "recvBitrateKbps": 0,
+      "fpsSend": 24,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6412,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 49.30069999980927,
+    "metrics": {
+      "sendBitrateKbps": 622.413620430646,
+      "recvBitrateKbps": 0,
+      "fpsSend": 14,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6412,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 50.302099999904634,
+    "metrics": {
+      "sendBitrateKbps": 525.2406630216797,
+      "recvBitrateKbps": 0,
+      "fpsSend": 15,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6412,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 51.30159999990463,
+    "metrics": {
+      "sendBitrateKbps": 389.7948974487253,
+      "recvBitrateKbps": 0,
+      "fpsSend": 15,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6412,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 52.30069999980927,
+    "metrics": {
+      "sendBitrateKbps": 352.81353221263686,
+      "recvBitrateKbps": 0,
+      "fpsSend": 15,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6412,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 53.300599999904634,
+    "metrics": {
+      "sendBitrateKbps": 238.22382235951756,
+      "recvBitrateKbps": 7.544754474727962,
+      "fpsSend": 14,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6413,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 54.302099999904634,
+    "metrics": {
+      "sendBitrateKbps": 240.4952571143285,
+      "recvBitrateKbps": 0,
+      "fpsSend": 15,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6413,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 55.30079999995232,
+    "metrics": {
+      "sendBitrateKbps": 158.8224692023898,
+      "recvBitrateKbps": 0,
+      "fpsSend": 15,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6413,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 56.30229999995232,
+    "metrics": {
+      "sendBitrateKbps": 112.74288567149276,
+      "recvBitrateKbps": 0,
+      "fpsSend": 15,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6413,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 57.30069999980927,
+    "metrics": {
+      "sendBitrateKbps": 107.96474360521269,
+      "recvBitrateKbps": 0,
+      "fpsSend": 15,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6413,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 58.3005,
+    "metrics": {
+      "sendBitrateKbps": 83.60072012808033,
+      "recvBitrateKbps": 0,
+      "fpsSend": 15,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6413,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 59.3005,
+    "metrics": {
+      "sendBitrateKbps": 62.896,
+      "recvBitrateKbps": 0,
+      "fpsSend": 15,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6413,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 60.301,
+    "metrics": {
+      "sendBitrateKbps": 43.99400299850065,
+      "recvBitrateKbps": 0,
+      "fpsSend": 15,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6413,
+      "width": 640,
+      "height": 480
+    }
+  },
+  {
+    "timestampSec": 61.30109999990463,
+    "metrics": {
+      "sendBitrateKbps": 36.3403659668692,
+      "recvBitrateKbps": 0,
+      "fpsSend": 15,
+      "fpsRecv": null,
+      "jitterMs": 1,
+      "rttMs": 1,
+      "packetsLost": 165,
+      "packetsReceived": 6413,
+      "width": 640,
+      "height": 480
+    }
+  }
+]

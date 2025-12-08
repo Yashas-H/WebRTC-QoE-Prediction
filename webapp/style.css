@@ -1,0 +1,48 @@
+body {
+    background: #f7f7f7;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+#controls {
+    margin: 20px;
+}
+
+button {
+    padding: 12px 18px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#mosBox {
+    width: 220px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    border: 3px solid #ccc;
+    background: white;
+}
+
+#mosValue {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#tierValue {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#videoArea {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+video {
+    width: 300px;
+    border: 2px solid #aaa;
+    border-radius: 6px;
+}
