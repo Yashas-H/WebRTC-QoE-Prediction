@@ -48,10 +48,11 @@ def process_session(json_data, session_name):
 
 
 # ============================================================
-# MOS HEURISTIC — improved_mos_v4
+# MOS HEURISTIC — mos_det
 # ============================================================
 
-def improved_mos_v4(row):
+def mos_det(row):
+    # Extract raw metrics with safe defaults
     rb   = row["recvBitrateKbps"] or 0
     fps  = row["fpsRecv"] or 0
     jit  = row["jitterMs"] or 0
@@ -61,19 +62,17 @@ def improved_mos_v4(row):
     lost  = row["packetsLost"] or 0
     recv  = row["packetsReceived"] or 0
 
-    # -------------------------------
-    # 1) Bitrate-based MOS (softened penalties)
-    # -------------------------------
+    # Logistic bitrate-to-MOS mapping (saturates at higher bitrates)
     mos_br = 4.8 / (1.0 + np.exp(-(rb - 500.0) / 250.0))
 
+    # Impairment penalties for motion, jitter, RTT, and freeze indicators
     fps_norm = min(fps / 30.0, 1.0)
     fpsPenalty = 0.6 * (1.0 - fps_norm) * 0.8
-
     jitPenalty = 0.35 * (1.0 - np.exp(-jit / 60.0)) * 0.8
     rttPenalty = 0.35 * (1.0 - np.exp(-rtt / 200.0)) * 0.8
-
     freezePenalty = min(0.7, 0.01 * drops + 0.002 * jbuf) * 0.8
 
+    # MOS contribution from bitrate after subtracting impairments
     mos_from_bitrate = (
         mos_br
         - fpsPenalty
@@ -82,10 +81,7 @@ def improved_mos_v4(row):
         - freezePenalty
     )
 
-    # -------------------------------
-    # 2) Non-bitrate QoE MOS
-    # -------------------------------
-    # FPS quality
+    # Quality functions for individual dimensions
     if fps <= 10:
         q_fps = 0.0
     elif fps >= 30:
@@ -93,7 +89,6 @@ def improved_mos_v4(row):
     else:
         q_fps = (fps - 10.0) / 20.0
 
-    # Jitter quality
     if jit <= 5:
         q_jitter = 1.0
     elif jit >= 30:
@@ -101,7 +96,6 @@ def improved_mos_v4(row):
     else:
         q_jitter = 1.0 - (jit - 5.0) / 25.0
 
-    # RTT quality
     if rtt <= 50:
         q_rtt = 1.0
     elif rtt >= 250:
@@ -109,16 +103,15 @@ def improved_mos_v4(row):
     else:
         q_rtt = 1.0 - (rtt - 50.0) / 200.0
 
-    # Loss quality
+    # Loss and drop-based smoothness indicators
     loss_rate = lost / (lost + recv + 1e-6)
     q_loss = 1.0 - min(loss_rate / 0.05, 1.0)
 
-    # Drops
     total_frames = (row["framesDecoded"] or 0) + drops
     drop_rate = drops / (total_frames + 1e-6)
     q_drop = 1.0 - min(drop_rate / 0.10, 1.0)
 
-    # Jitter buffer
+    # Jitter buffer contribution to freeze likelihood
     if jbuf <= 20:
         q_jbuf = 1.0
     elif jbuf >= 150:
@@ -126,27 +119,20 @@ def improved_mos_v4(row):
     else:
         q_jbuf = 1.0 - (jbuf - 20.0) / 130.0
 
-    # Slightly more emphasis on drops in smoothness
+    # Aggregate smoothness and network quality sub-scores
     q_smooth  = 0.4 * q_fps + 0.6 * q_drop
-
-    # Slightly more emphasis on jitter in network
     q_network = 0.45 * q_jitter + 0.30 * q_rtt + 0.25 * q_loss
-
-    # Freezes: keep same structure, but this already uses drops & jbuf
     q_freeze  = 0.5 * q_drop + 0.5 * q_jbuf
 
-    # Aggregate non-bitrate QoE score
+    # Combined non-bitrate QoE score
     q_other = 0.4 * q_smooth + 0.4 * q_network + 0.2 * q_freeze
-
-    # Map to MOS
     mos_from_other = 1.0 + 4.0 * q_other
 
-    # -------------------------------
-    # 3) Blend (bitrate vs other QoE)
-    # -------------------------------
-    alpha = 0.50  # was 0.55 — now give non-bitrate a bit more weight
+    # Weighted blend between bitrate MOS and non-bitrate MOS
+    alpha = 0.50
     mos = alpha * mos_from_bitrate + (1.0 - alpha) * mos_from_other
 
+    # Final bounded MOS score
     return float(np.clip(mos, 1.0, 4.8))
 
 def mos_to_qoe_tier(mos):
@@ -196,7 +182,7 @@ def preprocess():
     df["jitter_roll_std_3"] = df.groupby("session")["jitterMs"].transform(lambda s: s.rolling(3).std()).fillna(0)
     df["bitrate_roll_std_3"] = df.groupby("session")["recvBitrateKbps"].transform(lambda s: s.rolling(3).std()).fillna(0)
 
-    df["mos"] = df.apply(improved_mos_v4, axis=1)
+    df["mos"] = df.apply(mos_det, axis=1)
     df["qoe_tier"] = df["mos"].apply(mos_to_qoe_tier)
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
@@ -205,6 +191,32 @@ def preprocess():
     print(f"\nSaved processed dataset to {OUT_PATH}")
     print("\nMOS stats:")
     print(df["mos"].describe())
+
+
+    # ============================================================
+    # ANALYTICS SUMMARY (MINIMAL)
+    # ============================================================
+
+    print("\n================ QoE TIER DISTRIBUTION ================")
+    print(df["qoe_tier"].value_counts())
+
+    print("\n================ CORRELATION WITH MOS ================")
+    corr = (
+        df[
+            [
+                "recvBitrateKbps", "sendBitrateKbps", "fpsRecv",
+                "jitterMs", "rttMs", "packetsLost", "framesDropped",
+                "bitrate_per_pixel", "jitterBufferMs"
+            ]
+        ]
+        .corrwith(df["mos"])
+        .sort_values(ascending=False)
+    )
+    print(corr)
+
+    print("\n================ PER-SESSION MOS STATS ================")
+    session_stats = df.groupby("session")["mos"].agg(["mean", "min", "max", "std"])
+    print(session_stats)
 
 
 if __name__ == "__main__":
